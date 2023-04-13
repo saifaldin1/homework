@@ -5,7 +5,7 @@ html {
 form {
   margin: 3rem;
   padding: 1rem;
-  border: 3px dashed #6f8d57;
+  border: 3px dashed #0e2503;
 }
 
 .form-control {
@@ -35,9 +35,9 @@ input:focus {
 button {
   font: inherit;
   cursor: pointer;
-  background: #2c5a06;
+  background: #2c570a;
   color: white;
-  border: 1px solid #075700;
+  border: 1px solid #a3afa2;
   padding: 1rem 2rem;
 }
 
@@ -45,13 +45,13 @@ button {
   text-align: center;
   font-size: 24px;
   font-weight: bold;
-  color: #015a14;
+  color: #deece1;
   padding: 10px;
   background-color: #245504;
 }
 
 .cm {
-  color: rgb(170, 118, 118)
+  color: rgb(40, 134, 103)
 }
 
 #options, #options option {
@@ -60,10 +60,10 @@ button {
 
 h3 {
   text-align: center;
-  color:#000057
+  color:#285207
 }
 
 h3:first-of-type {
-  border-top: 2px solid #000057;
+  border-top: 2px solid #06463b;
   padding-top: 20px
 }
