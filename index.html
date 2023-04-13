@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Programming Paradigms</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <form id="rectangle">
+
+      <div>
+        <p class="title"> حساب مساحة المستطيل</p>
+        <p class="cm">ملاحظة: يرجى إدخال القيم بوحدة السنتيمتر</p>
+      </div>
+
+      <select id="options">
+        <option value="procedural">بطريقة البرمجة الإجرائية</option>
+        <option value="functional">بطريقة البرمجة الهيكلية</option>
+        <option value="oop">بطريقة البرمجة الشيئية</option>
+      </select>
+
+      <div class="form-control">
+        <label for="length">الطول</label>
+        <input type="text" id="length" />
+      </div>
+      <div class="form-control">
+        <label for="length">العرض</label>
+        <input type="text" id="width" />
+      </div>
+      <button type="submit">احسب المساحة</button>
+      <p id="result"></p>
+      <h3>
+        Made With ♥ By Muhammed Alhamrouni & Saif Addin Alghazawi
+      </h3>
+      <h3>
+        عمل كل من الطالبان محمد الحمروني & سيف الدين الغزاوي
+      </h3>
+    </form>
+
+
+
+    <script src="procedural.js" id="jsFile"></script>
+    <script>
+      const options = document.getElementById('options');
+
+      options.onchange = function changJsFile(event) {
+
+        const jsFile = document.getElementById('jsFile');
+        jsFile.setAttribute('src',document.getElementById("options").value);
+        
+      }
+
+  </script>
+  </body>
+</html>
